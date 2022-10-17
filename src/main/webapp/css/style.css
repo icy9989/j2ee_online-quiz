@@ -1,0 +1,138 @@
+@charset "ISO-8859-1";
+
+:root{
+    --background-color: rgba(238, 238, 238, 0.4);
+    --primary-color: #3ad1f0;
+    --secondary-color: #39a9c2;
+}
+
+body {
+    color: #999;
+    background-color: var(--background-color);
+}
+
+.positioncenters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.positioncenterscol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.beigetexts {
+    color: beige;
+}
+
+.textprimarys {
+    color: var(--primary-color);
+}
+
+.textsecondarys {
+    color: var(--secondary-color);
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+}
+
+.bars{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+
+    transition: all 0.4s;
+}
+
+.togglers.fivesixs .barones{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.togglers.fivesixs .bartwos{
+    opacity: 0;
+}
+
+.togglers.fivesixs .barthrees{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.nav-link {
+    color: rgba(238, 238, 238, 0.8);
+    transition: all 0.3s;
+}
+
+.nav-link:hover, .nav-link:active, .nav-link:visited {
+    letter-spacing: 1.2px;
+    color: rgb(238, 238, 238);
+    transform: scale(1.1);
+}
+
+.loginbtns {
+    background-color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.loginbtns:hover {
+    background-color: var(--secondary-color);
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.btns {
+    color: #fff;
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.btns:hover,
+.btns:active,
+.btns:focus
+{
+    background: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    transform: scale(0.95);
+}
+
+.margin-right {
+    margin-right: 10px !important;
+} 
+
+.btn-outline {
+    color: var(--primary-color);
+    background-color: #ffffff;
+    border-color: var(--primary-color);
+    transition: all 0.5s;
+}
+  
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus
+{
+    background: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    transform: scale(0.95);
+}
+
+.answer-markboxes {
+     width: 160px;
+     height: 200px;
+}
+
+.b-alerts {
+     border: 1px solid rgba(58, 209, 240, 0.3);
+     background-color: rgba(58, 209, 240, 0.2);
+}
+
+.g-alerts {
+     border: 1px solid rgba(59, 255, 52, 0.4);
+     background-color: rgba(59, 255, 52, 0.3);
+}
+

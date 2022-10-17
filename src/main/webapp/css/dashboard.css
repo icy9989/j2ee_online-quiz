@@ -1,0 +1,363 @@
+@charset "ISO-8859-1";
+
+:root{
+    --background-color: rgba(238, 238, 238, 0.4);
+    --primary-color: #3ad1f0;
+    --secondary-color: #39a9c2;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* START NAVBAR */
+.navbar {
+    padding: 0;
+}
+
+.bars{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--primary-color);
+
+    transition: all 0.4s;
+}
+
+.togglers.fivesixs .barones{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.togglers.fivesixs .bartwos{
+    opacity: 0;
+}
+
+.togglers.fivesixs .barthrees{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.sidebars {
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 0;
+    border-right: 1px solid #eee;
+}
+
+.profileboxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(
+        var(--primary-color) 30%,
+        var(--secondary-color)
+    );
+    margin: 15px 20px;
+    padding: 30px 10px;
+    border-radius: 20px;
+    
+     position: relative;
+}
+
+.profileimgs {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: beige;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beigetexts {
+    color: beige;
+}
+
+.textprimarys {
+    color: var(--primary-color);
+}
+
+.textsecondarys {
+    color: var(--secondary-color);
+}
+
+.lists {
+    margin: 0;
+    padding: 0;
+}
+
+.listitems {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    box-shadow: 1px 1px 2px #eee;
+
+    cursor: pointer;
+}
+
+.listitems:first-child {
+    border-top: 1px solid #eee;
+}
+
+.listitems.actives {
+    position: relative;
+    background-color:  rgba(238, 238, 238, 0.5);
+}
+
+.listitems.actives::before {
+    content: '';
+    width: 5px;
+    height: 45px;
+    background-color: var(--primary-color);
+
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+
+.btns {
+    background-color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.btns:hover {
+    background-color: var(--secondary-color);
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+/* END NAVBAR */
+
+
+/* START SECTION */
+.positioncenters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #d5e9ee;
+    cursor: pointer;
+}
+
+.card i {
+    color: var(--primary-color);
+}
+
+/* start calendar */
+.calendarcards {
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.datecards {
+    flex-direction: column;
+}
+
+.daycards, .yearcards {
+    background-color: var(--primary-color);
+}
+
+.monthfonts {
+    font-size: 18px;
+}
+
+.datefonts {
+    font-size: 30px;
+}
+/* end calendar */
+
+.addcircles {
+    width: 70px;
+    height: 70px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.addcircles::before, .addcircles::after {
+    content: '';
+    background-color: #ffffff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.addcircles::before {
+    width: 30px;
+    height: 3px;
+}
+
+.addcircles::after {
+    width: 3px;
+    height: 30px;
+}
+/* END SECTION */
+
+
+/* start display section */
+#student {
+    display: none;
+}
+
+#instructor {
+    display: none;
+}
+
+#course {
+    display: none;
+}
+
+/* end display section */
+
+
+/* for change password */
+.pw-edits {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.textprimarys {
+    color: var(--primary-color);
+}
+
+.modal-headerbgs {
+    background-color: var(--secondary-color);
+}
+
+.form-control {
+    border: none;
+    background-color:rgba(238, 238, 238, 0.6);
+}
+
+.btns {
+    color: #fff;
+    background-color: var(--primary-color);
+    transition: all 0.5s;
+}
+
+.btns:hover,
+.btns:active,
+.btns:focus
+{
+    background: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    transform: scale(0.95);
+}
+
+.btn-outline {
+    color: var(--primary-color);
+    background-color: #ffffff;
+    border-color: var(--primary-color);
+    transition: all 0.5s;
+}
+  
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus
+{
+    background: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    transform: scale(0.95);
+}
+
+.margin-right {
+    margin-right: 10px !important;
+}
+
+
+/* modal*/
+.form-group {
+    position: relative;
+}
+
+.eyeiconones, .eyeicontwos {
+    position: absolute;
+
+    top: 0.6rem;
+    right: 1.5rem;
+
+    cursor: pointer;
+}
+
+.eyeiconthrees{
+    position: absolute;
+
+    top: 1.5rem;
+    right: 1.5rem;
+
+    cursor: pointer;
+}
+
+.g-alerts {
+     border: 1px solid rgba(59, 255, 52, 0.4);
+     background-color: rgba(59, 255, 52, 0.3);
+}
+
+.list-nos {
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: inline-flex;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext {
+  top: -5px;
+  left: 105%;
+}

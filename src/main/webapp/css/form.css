@@ -1,0 +1,25 @@
+@charset "ISO-8859-1";
+
+:root{
+    --background-color: rgba(238, 238, 238, 0.4);
+    --primary-color: #3ad1f0;
+    --secondary-color: #39a9c2;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(238, 238, 238), -5px -5px 15px rgba(238, 238, 238);
+}
+
+.form-control {
+    border: none;
+    background-color: var(--background-color);
+}
+
+.form-select {
+    border: none;
+    background-color: var(--background-color);
+}
+
